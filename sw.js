@@ -1,6 +1,6 @@
 // 오프라인에서도 열리도록 앱 파일을 캐시합니다. 파일을 바꾸면 VERSION을 올려주세요.
-const VERSION = 'v1';
-const CACHE = `crimson-pomodoro-${VERSION}`;
+const VERSION = 'v2';
+const CACHE = `pomodoro-timer-${VERSION}`;
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', e => {

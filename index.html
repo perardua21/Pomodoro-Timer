@@ -6,14 +6,14 @@
 <meta name="description" content="애플 감성의 미니멀 뽀모도로 타이머. 60분 다이얼 위에서 크림슨 링이 줄어듭니다.">
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#18181A" media="(prefers-color-scheme: dark)">
-<meta property="og:title" content="Crimson Pomodoro">
+<meta property="og:title" content="Pomodoro Timer">
 <meta property="og:description" content="60분 다이얼 위에서 크림슨 링이 줄어드는 미니멀 뽀모도로 타이머">
 <meta property="og:image" content="docs/screenshot-light.png">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="manifest.webmanifest">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}[hidden]{display:none!important}</style>
-<title>Crimson Pomodoro</title>
+<title>Pomodoro Timer</title>
 <style>
 /* Layout: one-screen app — segmented mode switch on top, 60-minute dial dead center, transport controls and today's tally below */
 :root{
@@ -284,7 +284,7 @@ kbd{font-family:var(--mono);font-size:11px;background:var(--surface);border-radi
     $('knob').setAttribute('cy', 200 - R*Math.cos(a));
     const t = fmt(rem);
     $('time').textContent = t;
-    document.title = S.running ? `${t} · ${MODES[S.mode]}` : 'Crimson Pomodoro';
+    document.title = S.running ? `${t} · ${MODES[S.mode]}` : 'Pomodoro Timer';
     $('dial').setAttribute('aria-valuenow', Math.round(rem/60));
     $('app').classList.toggle('last-minute', S.running && settings.pulse && rem <= 60);
     if (S.running && rem <= 0) complete();

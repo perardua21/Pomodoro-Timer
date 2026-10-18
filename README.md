@@ -1,4 +1,4 @@
-# Crimson Pomodoro
+# Pomodoro Timer
 
 60분 다이얼 위에서 크림슨 링이 줄어드는, 애플 감성의 미니멀 뽀모도로 타이머입니다.
 설치나 빌드 없이 HTML 파일 하나로 동작합니다.
