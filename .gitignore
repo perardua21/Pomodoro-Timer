@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs / deps (향후 데스크톱 앱 빌드용)
+node_modules/
+dist/
+*.log
